@@ -1,0 +1,25 @@
+{
+    "places": [
+        {
+            "nombre": "San Miguel de Allende",
+            "ubicacion": "San Miguel de Allende, México",
+            "calificacion": 4.9,
+            "imagen": "assets/images/san_miguel.jpg",
+            "categoria": "popular"
+        },
+        {
+            "nombre": "Tepoztlán",
+            "ubicacion": "Tepoztlán, Morelos",
+            "calificacion": 4.9,
+            "imagen": "assets/images/tepoztlan_morelos.jpg",
+            "categoria": "popular"
+        },
+        {
+            "nombre": "Peña de Bernal",
+            "ubicacion": "Peña de Bernal, Queretáro",
+            "calificacion": 4.8,
+            "imagen": "assets/images/pena_bernal.jpg",
+            "categoria": "popular"
+        }
+    ]
+}
