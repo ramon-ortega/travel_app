@@ -6,11 +6,37 @@ class PlaceDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('pais.nombre'),
-      ),
-      body: Center(
-        child: Text('Home'),
+      body: CustomScrollView(
+        physics: const BouncingScrollPhysics(),
+        slivers: [
+          SliverAppBar(
+            shape: const ContinuousRectangleBorder(
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(40),
+                bottomRight: Radius.circular(40),
+              ),
+            ),
+            backgroundColor: Colors.deepPurple,
+            expandedHeight: MediaQuery.of(context).size.height * 0.4,
+            floating: false,
+            pinned: true,
+            flexibleSpace: const FlexibleSpaceBar(
+              title: Text('Hola'),
+              background: ClipRRect(
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(20),
+                  bottomRight: Radius.circular(20),
+                ),
+                child: Image(
+                  fit: BoxFit.cover,
+                  image: AssetImage(
+                    'assets/images/cancun.jpg',
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

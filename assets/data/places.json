@@ -20,6 +20,41 @@
             "calificacion": 4.8,
             "imagen": "assets/images/pena_bernal.jpg",
             "categoria": "popular"
+        },
+        {
+            "nombre": "Zacatecas",
+            "ubicacion": "Zacatecas, México",
+            "calificacion": 5.0,
+            "imagen": "assets/images/pena_bernal.jpg",
+            "categoria": "colonial"
+        },
+        {
+            "nombre": "Guanajuato",
+            "ubicacion": "Guanajuato, México",
+            "calificacion": 5.0,
+            "imagen": "assets/images/pena_bernal.jpg",
+            "categoria": "colonial"
+        },
+        {
+            "nombre": "Puerto Vallarta",
+            "ubicacion": "Puerto Vallarta, México",
+            "calificacion": 5.0,
+            "imagen": "assets/images/pena_bernal.jpg",
+            "categoria": "playa"
+        },
+        {
+            "nombre": "Cancún",
+            "ubicacion": "Cancún, México",
+            "calificacion": 5.0,
+            "imagen": "assets/images/pena_bernal.jpg",
+            "categoria": "playa"
+        },
+        {
+            "nombre": "Valle de Bravo",
+            "ubicacion": "Valle de Bravo, México",
+            "calificacion": 5.0,
+            "imagen": "assets/images/pena_bernal.jpg",
+            "categoria": "bosque"
         }
     ]
 }
