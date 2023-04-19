@@ -5,56 +5,88 @@
             "ubicacion": "San Miguel de Allende, México",
             "calificacion": 4.9,
             "imagen": "assets/images/san_miguel.jpg",
-            "categoria": "popular"
+            "categoria": "popular",
+            "description": "San Miguel de Allende es una hermosa ciudad colonial ubicada en el estado de Guanajuato, México. Conocida por su arquitectura barroca, la ciudad cuenta con una gran cantidad de galerías de arte, restaurantes y tiendas de artesanías. Entre sus principales atractivos turísticos se encuentran la Parroquia de San Miguel Arcángel, la Casa de Allende y sus calles empedradas. San Miguel de Allende es una joya cultural y ha sido declarada Patrimonio de la Humanidad por la UNESCO."
         },
         {
             "nombre": "Tepoztlán",
             "ubicacion": "Tepoztlán, Morelos",
             "calificacion": 4.9,
             "imagen": "assets/images/tepoztlan_morelos.jpg",
-            "categoria": "popular"
+            "categoria": "popular",
+            "description": "Tepoztlán es una pintoresca ciudad ubicada en el estado de Morelos, México. Conocida por su ambiente bohemio, la ciudad cuenta con una gran cantidad de tiendas de artesanías y restaurantes. Entre sus principales atractivos turísticos se encuentran el Tepozteco, una montaña sagrada con un antiguo templo prehispánico en su cima, y el Mercado de Artesanías, donde se pueden encontrar objetos de arte local. Tepoztlán es también un centro de espiritualidad y retiros, y es un destino popular para la práctica de yoga y meditación."
         },
         {
             "nombre": "Peña de Bernal",
             "ubicacion": "Peña de Bernal, Queretáro",
             "calificacion": 4.8,
             "imagen": "assets/images/pena_bernal.jpg",
-            "categoria": "popular"
+            "categoria": "popular",
+            "description": "Peña de Bernal es un pequeño pueblo ubicado en el estado de Querétaro en México, famoso por su gran monolito de piedra llamado Peña de Bernal, que es considerado el tercer monolito más grande del mundo. El pueblo está rodeado por hermosas montañas y viñedos, y es conocido por su gastronomía y artesanías. Peña de Bernal es un destino popular para los turistas que buscan aventuras al aire libre, como escalar el monolito, hacer senderismo o montar a caballo. La arquitectura colonial de sus casas y edificios le da un encanto especial a este lugar."
         },
         {
             "nombre": "Zacatecas",
             "ubicacion": "Zacatecas, México",
             "calificacion": 5.0,
-            "imagen": "assets/images/pena_bernal.jpg",
-            "categoria": "colonial"
+            "imagen": "assets/images/zacatecas.jpg",
+            "categoria": "colonial",
+            "description": "Zacatecas es una ciudad histórica en el centro de México, rodeada de montañas y conocida por su arquitectura colonial y su rica historia minera. La ciudad cuenta con hermosas iglesias y edificios antiguos, como la Catedral de Zacatecas y el Palacio de Gobierno, que se encuentran en el centro histórico de la ciudad. Además, la ciudad cuenta con varios museos interesantes, como el Museo Rafael Coronel y el Museo de la Toma de Zacatecas, que muestran la historia y la cultura de la región. Los visitantes también pueden disfrutar de la gastronomía local, que incluye platillos como los tacos de canasta y el asado de boda."
         },
         {
             "nombre": "Guanajuato",
             "ubicacion": "Guanajuato, México",
-            "calificacion": 5.0,
-            "imagen": "assets/images/pena_bernal.jpg",
-            "categoria": "colonial"
+            "calificacion": 4.8,
+            "imagen": "assets/images/guanajuato.jpg",
+            "categoria": "colonial",
+            "description": "Guanajuato es una ciudad colonial en el centro de México, famosa por sus calles empedradas, hermosas plazas y arquitectura barroca. La ciudad es rica en historia y cultura, con numerosos museos y sitios históricos, como la Alhóndiga de Granaditas y la Universidad de Guanajuato. Los visitantes también pueden disfrutar de la gastronomía local, que incluye platillos como el pipián y los chiles en nogada. Además, la ciudad es famosa por su Festival Internacional Cervantino, uno de los festivales culturales más importantes de Latinoamérica, que atrae a artistas y turistas de todo el mundo."
         },
         {
             "nombre": "Puerto Vallarta",
             "ubicacion": "Puerto Vallarta, México",
-            "calificacion": 5.0,
-            "imagen": "assets/images/pena_bernal.jpg",
-            "categoria": "playa"
+            "calificacion": 4.8,
+            "imagen": "assets/images/vallarta.jpeg",
+            "categoria": "playa",
+            "description": "Puerto Vallarta es un destino turístico popular en la costa oeste de México, conocido por sus hermosas playas, aguas cristalinas y clima tropical. La ciudad cuenta con numerosos resorts, hoteles, restaurantes y bares, así como tiendas y galerías de arte. Los visitantes pueden disfrutar de actividades al aire libre como el buceo, el snorkel, el parapente y el avistamiento de ballenas. La playa de Los Muertos y la Zona Romántica son algunas de las zonas más populares de la ciudad, con una amplia variedad de opciones para el entretenimiento nocturno. La ciudad también cuenta con una rica cultura y arte local, con festivales como el Festival Cultural de Mayo y el Festival Gourmet Internacional."
         },
         {
             "nombre": "Cancún",
             "ubicacion": "Cancún, México",
-            "calificacion": 5.0,
-            "imagen": "assets/images/pena_bernal.jpg",
-            "categoria": "playa"
+            "calificacion": 4.9,
+            "imagen": "assets/images/cancun.jpg",
+            "categoria": "playa",
+            "description": "Cancún es una ciudad turística en la costa este de México, conocida por sus hermosas playas de arena blanca y aguas turquesas. La ciudad es popular por sus resorts de lujo, hoteles todo incluido y vida nocturna vibrante. Los visitantes pueden disfrutar de actividades al aire libre como el snorkel, el buceo y los deportes acuáticos, así como de las numerosas tiendas, restaurantes y bares en el área de la Zona Hotelera. Además, Cancún es el punto de partida para explorar las antiguas ruinas mayas de Chichén Itzá y Tulum, así como para visitar la Isla Mujeres y Cozumel."
+        },
+        {
+            "nombre": "Acapulco",
+            "ubicacion": "Acapulco, México",
+            "calificacion": 4.6,
+            "imagen": "assets/images/acapulco.jpg",
+            "categoria": "playa",
+            "description": "Acapulco es una ciudad turística en la costa sur de México, famosa por sus hermosas playas, vida nocturna y clima cálido todo el año. Es un destino popular para los turistas nacionales e internacionales, que disfrutan de las playas como la de Caleta y la de Hornos, así como de actividades como el surf, el parapente y el buceo. La ciudad también cuenta con numerosos resorts, hoteles, restaurantes y bares, así como con sitios históricos como el Fuerte de San Diego y el Acueducto de la Quebrada. Además, Acapulco es conocido por su famoso espectáculo de clavados en La Quebrada, que atrae a multitudes cada noche."
         },
         {
             "nombre": "Valle de Bravo",
             "ubicacion": "Valle de Bravo, México",
+            "calificacion": 4.9,
+            "imagen": "assets/images/bravo.jpg",
+            "categoria": "bosque",
+            "description": "Valle de Bravo es un pueblo mágico en el Estado de México, conocido por su impresionante lago y paisajes montañosos. Es un destino popular para los amantes de la naturaleza, ya que ofrece actividades al aire libre como el senderismo, la pesca y los deportes acuáticos en el lago. La ciudad también es conocida por su arquitectura colonial y sus calles empedradas llenas de tiendas, galerías de arte y restaurantes con deliciosa comida mexicana. Además, los visitantes pueden disfrutar de atracciones como la cascada Velo de Novia y la Iglesia de San Francisco de Asís, y de festivales culturales como el Festival de las Almas."
+        },
+        {
+            "nombre": "Huasteca Potosína",
+            "ubicacion": "San Luis Potosí, México",
             "calificacion": 5.0,
-            "imagen": "assets/images/pena_bernal.jpg",
-            "categoria": "bosque"
+            "imagen": "assets/images/huazteca.jpg",
+            "categoria": "bosque",
+            "description": "La Huasteca Potosina es una región del estado de San Luis Potosí, en México, conocida por su impresionante belleza natural. La zona cuenta con numerosas cascadas, ríos, cañones y cuevas, así como con una biodiversidad única que incluye especies endémicas de flora y fauna. Los visitantes pueden realizar actividades como el rafting, la natación, el senderismo y la exploración de cuevas, así como disfrutar de la deliciosa comida regional. Además, la Huasteca Potosina es conocida por su rica cultura indígena, y cuenta con sitios arqueológicos como Tamtoc y Tancama."
+        },
+        {
+            "nombre": "Huasteca Regia",
+            "ubicacion": "Nuevo León, México",
+            "calificacion": 4.7,
+            "imagen": "assets/images/huazteca_mty.jpeg",
+            "categoria": "bosque",
+            "description": "La Huasteca Regia es una subregión del noreste de México, que abarca partes de los estados de Nuevo León y Tamaulipas. La zona cuenta con impresionantes paisajes naturales, incluyendo cañones, ríos y cascadas. Además, es una región rica en cultura y tradiciones, con festivales como el Carnaval de Tampico y el Festival Internacional de la Huasteca. Los visitantes pueden disfrutar de actividades como el senderismo, la pesca y el turismo de aventura, así como degustar la deliciosa comida regional, que incluye platillos como la carne asada y los tacos de trompo."
         }
     ]
 }

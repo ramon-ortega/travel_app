@@ -77,7 +77,7 @@ class HomePage extends StatelessWidget {
               SizedBox(height: 10),
               _CustomCarousel(),
               SizedBox(height: 20),
-              _CategoryButtons(),
+              CategoryButtons(),
               SizedBox(height: 20),
               _PlacesSlider()
             ],
@@ -99,16 +99,13 @@ class _PlacesSlider extends StatelessWidget {
           future: PlacesService.readFileJson(),
           builder: (context, snapshot) {
             if (index == 0) {
-              print("ENTRA");
               list = snapshot.data?.where((element) {
                 return element.categoria == "popular";
               }).toList();
             } else if (index == 1) {
-              print("ENTRA");
               list = snapshot.data?.where((element) {
                 return element.categoria == "colonial";
               }).toList();
-              print(list?.length);
             } else if (index == 2) {
               list = snapshot.data?.where((element) {
                 return element.categoria == "playa";
@@ -130,7 +127,9 @@ class _PlacesSlider extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context) {
-                            return const PlaceDetail();
+                            return PlaceDetail(
+                              place: list![index],
+                            );
                           }),
                         );
                       },
@@ -219,7 +218,7 @@ class _PlacesSlider extends StatelessWidget {
                                         const SizedBox(
                                           width: 5,
                                         ),
-                                        const Text('4.8'),
+                                        Text("${list![index].calificacion}"),
                                       ],
                                     )
                                   ],
@@ -237,10 +236,8 @@ class _PlacesSlider extends StatelessWidget {
   }
 }
 
-class _CategoryButtons extends StatelessWidget {
-  const _CategoryButtons({
-    super.key,
-  });
+class CategoryButtons extends StatelessWidget {
+  const CategoryButtons({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -296,27 +293,52 @@ class _CustomCarousel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final items = [1, 2, 3, 4, 5];
-    return CarouselSlider(
-      items: items.map((e) {
-        return Builder(builder: (context) {
-          return Card(
-            margin: const EdgeInsets.all(10),
-            elevation: 6.0,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(30),
-            ),
-            child: Image.network(
-              'https://cdn.pixabay.com/photo/2020/11/01/23/22/breakfast-5705180_1280.jpg',
-              fit: BoxFit.cover,
-              width: double.infinity,
+    return FutureBuilder(
+      future: PlacesService.readFileJson(),
+      builder: (context, snapshot) {
+        if (snapshot.data != null) {
+          return CarouselSlider(
+            items: snapshot.data!.map((e) {
+              return Builder(builder: (context) {
+                return GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return PlaceDetail(place: e);
+                        },
+                      ),
+                    );
+                  },
+                  child: Card(
+                    margin: const EdgeInsets.all(10),
+                    elevation: 6.0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset(
+                        e.imagen,
+                        fit: BoxFit.cover,
+                        width: double.infinity,
+                      ),
+                    ),
+                  ),
+                );
+              });
+            }).toList(),
+            options: CarouselOptions(),
+          );
+        } else {
+          return const Center(
+            child: CircularProgressIndicator(
+              color: Colors.red,
             ),
           );
-        });
-      }).toList(),
-      options: CarouselOptions(
-        enlargeCenterPage: true,
-      ),
+        }
+      },
     );
   }
 }

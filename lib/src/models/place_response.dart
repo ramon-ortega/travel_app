@@ -32,6 +32,7 @@ class Place {
     required this.calificacion,
     required this.imagen,
     required this.categoria,
+    required this.description,
   });
 
   final String nombre;
@@ -39,6 +40,7 @@ class Place {
   final double calificacion;
   final String imagen;
   final String categoria;
+  final String description;
 
   factory Place.fromJson(String str) => Place.fromMap(json.decode(str));
 
@@ -50,6 +52,7 @@ class Place {
         calificacion: json["calificacion"]?.toDouble(),
         imagen: json["imagen"],
         categoria: json["categoria"],
+        description: json["description"] ?? '',
       );
 
   Map<String, dynamic> toMap() => {
