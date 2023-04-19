@@ -40,11 +40,10 @@ class CustomDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.info_outline),
+            leading: const Icon(Icons.library_books_outlined),
             title: const Text('Créditos'),
             onTap: () {
-              // Actualiza el estado de la aplicación
-              // ...
+              Navigator.pushNamed(context, 'credits/');
             },
           ),
         ],
