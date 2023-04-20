@@ -14,6 +14,8 @@ Link: [Ingresa al diseño aqui](https://www.figma.com/file/pVbskAb60oeJPV4rCx2tx
 
 Video con explicación del código y del funcionamiento general de la App.
 
+Link: [Ingresa al video aqui](https://www.loom.com/share/4590e80729794cfbb43d38157153c232)
+
 # App
 
 A continuación se muestran las pantallas diseñadas en Flutter de Travel App. 
