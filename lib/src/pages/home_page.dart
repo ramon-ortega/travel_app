@@ -141,28 +141,42 @@ class _PlacesSlider extends StatelessWidget {
                           padding: const EdgeInsets.all(10.0),
                           child: Column(
                             children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.5),
-                                      spreadRadius: 3,
-                                      blurRadius: 8,
-                                      offset: const Offset(0, 5),
-                                    )
-                                  ],
-                                ),
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(10),
-                                  child: SizedBox(
-                                    height: 140,
-                                    width: 240,
-                                    child: Image.asset(
-                                      list![index].imagen,
-                                      fit: BoxFit.cover,
+                              Stack(
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey.withOpacity(0.5),
+                                          spreadRadius: 3,
+                                          blurRadius: 8,
+                                          offset: const Offset(0, 5),
+                                        )
+                                      ],
+                                    ),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(10),
+                                      child: SizedBox(
+                                        height: 140,
+                                        width: 240,
+                                        child: Image.asset(
+                                          list![index].imagen,
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
                                     ),
                                   ),
-                                ),
+                                  Positioned(
+                                    right: 5,
+                                    child: IconButton(
+                                      onPressed: () {},
+                                      icon: const Icon(
+                                        Icons.favorite,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                               const SizedBox(
                                 height: 20,

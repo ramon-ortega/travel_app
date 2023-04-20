@@ -21,7 +21,8 @@ class CustomDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            child: const Center(
+            child: const Align(
+              alignment: Alignment.center,
               child: Text(
                 'Travel App',
                 style: TextStyle(
