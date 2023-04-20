@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/src/models/place_response.dart';
-
-import 'home_page.dart';
+import 'package:travel_app/src/widgets/custom_info_icon.dart';
 
 class PlaceDetail extends StatelessWidget {
   const PlaceDetail({
@@ -24,10 +23,7 @@ class PlaceDetail extends StatelessWidget {
                 _HeadTitles(
                   place: place,
                 ),
-                const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 20),
-                  child: CategoryButtons(),
-                ),
+                const _InfoIcons(),
                 const SizedBox(height: 20),
                 _DescriptionBox(place: place),
                 const SizedBox(height: 60),
@@ -36,6 +32,37 @@ class PlaceDetail extends StatelessWidget {
           )
         ],
       ),
+    );
+  }
+}
+
+class _InfoIcons extends StatelessWidget {
+  const _InfoIcons();
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: const [
+        CustomInfoIcon(
+          icon: Icons.star,
+          iconColor: Colors.red,
+          title: 'Rating',
+          info: '4.8 (3.2k)',
+        ),
+        CustomInfoIcon(
+          icon: Icons.car_repair_rounded,
+          iconColor: Colors.blue,
+          title: 'Distancia',
+          info: '3000km',
+        ),
+        CustomInfoIcon(
+          icon: Icons.location_city,
+          iconColor: Colors.green,
+          title: 'Restaurantes',
+          info: '108 disp',
+        ),
+      ],
     );
   }
 }
@@ -159,10 +186,13 @@ class _CustomAppBar extends StatelessWidget {
             bottomLeft: Radius.circular(20),
             bottomRight: Radius.circular(20),
           ),
-          child: Image(
-            fit: BoxFit.cover,
-            image: AssetImage(
-              place.imagen,
+          child: Hero(
+            tag: place.nombre,
+            child: Image(
+              fit: BoxFit.cover,
+              image: AssetImage(
+                place.imagen,
+              ),
             ),
           ),
         ),

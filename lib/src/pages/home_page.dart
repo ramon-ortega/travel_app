@@ -319,10 +319,13 @@ class _CustomCarousel extends StatelessWidget {
                     ),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        e.imagen,
-                        fit: BoxFit.cover,
-                        width: double.infinity,
+                      child: Hero(
+                        tag: e.nombre,
+                        child: Image.asset(
+                          e.imagen,
+                          fit: BoxFit.cover,
+                          width: double.infinity,
+                        ),
                       ),
                     ),
                   ),

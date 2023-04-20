@@ -91,13 +91,16 @@ class _ContactSection extends StatelessWidget {
               minimumSize: const Size(double.infinity, 50),
             ),
             child: const Text(
-              'Reservar Ahora',
+              'Contactar',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
             ),
+          ),
+          const SizedBox(
+            height: 40,
           ),
         ],
       ),
